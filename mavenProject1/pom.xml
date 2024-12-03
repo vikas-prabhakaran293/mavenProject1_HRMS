@@ -42,11 +42,21 @@
       <scope>test</scope>
     </dependency>
 
-    <dependency>
+    <!--<dependency>
     	<groupId>Testing</groupId>
     	<artifactId>Testing</artifactId>
     	<version>0.0.1-SNAPSHOT</version>
-    </dependency>
+    </dependency>-->
+    
+    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugin-testing/maven-plugin-testing-harness -->
+<dependency>
+    <groupId>org.apache.maven.plugin-testing</groupId>
+    <artifactId>maven-plugin-testing-harness</artifactId>
+    <version>3.3.0</version>
+    <scope>test</scope>
+</dependency>
+
+    
   </dependencies>
 
   <build>

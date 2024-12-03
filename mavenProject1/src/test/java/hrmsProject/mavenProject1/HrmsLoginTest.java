@@ -93,6 +93,7 @@ public class HrmsLoginTest extends BaseClass {
         } else {
             System.out.println("Password visibility is disabled.");
         }
+		System.out.println("Show Password");
 	}
 	
 	@Test (priority = 8)
