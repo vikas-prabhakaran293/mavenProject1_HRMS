@@ -12,8 +12,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import baseClassHRMS.BaseClass;
-import baseClassHRMS.BaseClass1;
-import baseClassHRMS.shanBase;
 
 public class LoginPageLocators extends BaseClass{
 	String Username = "vikaspk293@gmail.com";
@@ -23,16 +21,6 @@ public class LoginPageLocators extends BaseClass{
 	String givenAlertMessage = "Invalid Login Credentials";
 	String expectedResult = "https://skad.timetracks.us/timesheets";
 	//String actualResult = driver.getCurrentUrl();
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	@FindBy(xpath = "//*[@id=\"main-wrapper\"]/div/div/div[3]/div[1]/div/div/div/img")
 	public WebElement logo;
