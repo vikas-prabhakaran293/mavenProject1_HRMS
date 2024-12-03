@@ -38,6 +38,8 @@ public class HrmsLoginTest extends BaseClass {
 	
 	@Test (priority = 2)
 	public void loginPageLogo() {
+//		d
+		System.out.println("com");
 		Assert.assertTrue((loginPageLocators.LoginPageLogo).isDisplayed());
 	System.out.println("Login Page Logo is displayed in the Web Page");
 	}
@@ -109,6 +111,7 @@ public class HrmsLoginTest extends BaseClass {
 		else {
 			System.out.println("alertMessage and givenAlertMessage was mismatched");
 		}
+		System.out.println("Login done successfully");
 	}
 	
 	@Test (priority = 9)

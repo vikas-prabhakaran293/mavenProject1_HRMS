@@ -24,6 +24,16 @@ public class LoginPageLocators extends BaseClass{
 	String expectedResult = "https://skad.timetracks.us/timesheets";
 	//String actualResult = driver.getCurrentUrl();
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@FindBy(xpath = "//*[@id=\"main-wrapper\"]/div/div/div[3]/div[1]/div/div/div/img")
 	public WebElement logo;
 	
