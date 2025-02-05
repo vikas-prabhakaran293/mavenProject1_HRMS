@@ -3,22 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="hrmsProject.mavenProject1.HrmsLoginTest">
+      <class name="hrmsProject.mavenProject1.RoleTest">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="loginPageTitle"/>
-          <include name="logo"/>
-          <include name="forgotPasswordDisplayed"/>
-          <include name="TestBase"/>
-          <include name="validCredentials"/>
-          <include name="loginPageLogo"/>
           <include name="launchBrowser"/>
-          <include name="imageInTheLoginPage"/>
-          <include name="invalidCredentials"/>
-          <include name="keepMeLoggedIn"/>
-          <include name="showPasswordIcon"/>
+          <include name="loadConfig"/>
+          <include name="CountOfTheRecords"/>
+          <include name="CountOfTheSearchedRecords"/>
+          <include name="closeBrowser"/>
+          <include name="AddNewRole"/>
+          <include name="EditRole"/>
+          <include name="navigateToRolePage"/>
         </methods>
-      </class> <!-- hrmsProject.mavenProject1.HrmsLoginTest -->
+      </class> <!-- hrmsProject.mavenProject1.RoleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

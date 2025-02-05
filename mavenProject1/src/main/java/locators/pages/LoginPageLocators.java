@@ -8,12 +8,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import baseClassHRMS.BaseClass;
 
 public class LoginPageLocators extends BaseClass{
+	public WebDriverWait wait;
 	String Username = "vikaspk293@gmail.com";
 	String Password = "Testing@1234";
 	String Username1 = "vikaspk293@gmail.com";
@@ -40,7 +42,7 @@ public class LoginPageLocators extends BaseClass{
 	@FindBy (xpath = "//*[@id=\"password-error\"]")
 	public WebElement PwdRequiredFieldAlert;
 	
-	@FindBy(name = "primary_email")
+	@FindBy(css = "input[name='primary_email']")
 	public static WebElement UserName;
 	
 	@FindBy(id = "password")
@@ -129,5 +131,16 @@ public class LoginPageLocators extends BaseClass{
 	// To click the keep me logged button.
 	public void keepMeLoggedIn() {
 		KeepMeLoggedIn.click();
+	}
+	
+	public void loginApplication() throws InterruptedException {
+		wait =new WebDriverWait(driver,Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(UserName));
+		PassWord.click();
+		PassWord.sendKeys(Password1);
+		UserName.click();
+		UserName.sendKeys(Username1);
+		//Thread.sleep(2000);
+		loginButton.click();
 	}
 }

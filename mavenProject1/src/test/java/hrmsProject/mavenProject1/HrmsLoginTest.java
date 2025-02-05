@@ -130,7 +130,7 @@ public class HrmsLoginTest extends BaseClass {
 		System.out.println((loginPageLocators.ConfirmationMessage).getText());
 		Thread.sleep(3000);
 		String actualResult = driver.getCurrentUrl();
-		String expectedResult = "https://skad.timetracks.us/timesheets";
+		String expectedResult = "https://skad.timetracks.us/dashboard";
 		Assert.assertEquals(actualResult, expectedResult);
      	System.out.println("Logged in successfully");
 		//loginPageLocators.getCurrentURL();	

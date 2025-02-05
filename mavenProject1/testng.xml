@@ -6,6 +6,7 @@
     <classes>
       <class name="hrmsProject.mavenProject1.HrmsLoginTest"/>
       <class name="hrmsProject.mavenProject1.ResetPasswordTest"/>
+      <class name="hrmsProject.mavenProject1.TimesheetTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
